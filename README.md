@@ -9,6 +9,7 @@ Bundler to make developing code easier and scalable.
 - [TypeScript](https://www.typescriptlang.org/)
 - [ESLint](https://eslint.org/)
 - [Solid](https://www.solidjs.com/)
+- [Tailwind](https://tailwindcss.com/)
 - Local development server to run the code live in the browser.
 
 ## Requirements
