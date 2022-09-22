@@ -1,11 +1,11 @@
 import { existsSync, readFileSync, writeFileSync } from "fs";
-import { defaultPanelOptions } from "../panelOptions.config.js";
+import { defaultPanelOptions } from "../panelOptions.config.mjs";
 
 const INDENT = 2;
 
 const IN_PATHS = {
   css: "dist/style.css",
-  html: "dist/svgData.svg",
+  html: "dist/html.html",
   onRender: "dist/onRender.js",
   onInit: "dist/onInit.js",
   codeData: "dist/custom-properties.json",

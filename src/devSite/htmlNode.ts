@@ -1,5 +1,5 @@
 import type { HTMLNode } from "../../types/htmlgraphicsTypes/htmlNode";
-import html from "../design/svgData.svg?raw";
+import html from "../html.html?raw";
 
 const shadowContainer = document.querySelector("#shadow-container");
 if (!shadowContainer) throw new Error("Could not find shadow container.");

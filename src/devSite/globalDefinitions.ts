@@ -3,7 +3,7 @@
 */
 
 import customProperties from "../custom-properties.json";
-import { defaultPanelOptions } from "../../panelOptions.config.js";
+import { defaultPanelOptions } from "../../panelOptions.config.mjs";
 
 window.customProperties = customProperties;
 window.options = defaultPanelOptions;

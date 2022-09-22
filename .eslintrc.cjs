@@ -1,6 +1,7 @@
 module.exports = {
   extends: [
     "eslint:recommended",
+    "plugin:solid/recommended",
     "plugin:eslint-comments/recommended",
     "plugin:promise/recommended",
     "plugin:unicorn/recommended",
@@ -49,7 +50,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["*.ts"],
+      files: ["*.ts", "*.tsx"],
       parser: "@typescript-eslint/parser",
       extends: [
         "plugin:@typescript-eslint/recommended",
@@ -59,11 +60,11 @@ module.exports = {
   ],
   settings: {
     "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".d.ts"],
+      "@typescript-eslint/parser": [".ts", ".tsx", ".d.ts"],
     },
     "import/resolver": {
       node: {
-        extensions: [".js", ".ts"],
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
       },
       typescript: {
         alwaysTryTypes: true,
