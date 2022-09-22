@@ -2,15 +2,6 @@
 
 Bundler to make developing code easier and scalable.
 
-## Table of contents
-
-- [Bundler](#bundler)
-  - [Table of contents](#table-of-contents)
-  - [Contains](#contains)
-  - [Usage](#usage)
-  - [Dev site](#dev-site)
-  - [Eslint](#eslint)
-
 ## Contains
 
 - [rollup.js](https://rollupjs.org/)
@@ -20,26 +11,35 @@ Bundler to make developing code easier and scalable.
 - [Solid](https://www.solidjs.com/)
 - Local development server to run the code live in the browser.
 
+## Requirements
+
+- [Node](https://nodejs.org/)
+- [pnpm](https://pnpm.io/)
+
 ## Usage
 
 First you have to install the required dependencies
 
 ```bash
-npm install
+pnpm i
 ```
+
+### Dev
 
 Then you start the development script
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 Go to <http://localhost:5173>. Change some code in `./src/onInit.tsx`, `./src/onRender.ts`, or `./src/design/html.html`, and the website will update.
 
+### Build
+
 When the code is ready to be uploaded to Grafana, start the build script
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 Then go to `/dist` and copy the content of `panel-options.json` to the panels `Import/export` option.
